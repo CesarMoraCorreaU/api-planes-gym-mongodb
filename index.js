@@ -12,7 +12,7 @@ app.use(express.json());
 connectDB();
 
 // Rutas
-app.use("/plans", planRoutes);
+app.use("/api-gym/v1/plans", planRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
